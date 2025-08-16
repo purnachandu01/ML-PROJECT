@@ -1,1 +1,66 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Student Exam Predictor</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 60px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #2575fc;
+      background: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    a:hover {
+      background: #2575fc;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Student Exam Performance Predictor 🎓</h1>
+    <p>Predict your math score easily by entering student details.</p>
+    <a href="{{ url_for('predict_datapoint') }}">Start Prediction</a>
+  </div>
+</body>
+</html>
